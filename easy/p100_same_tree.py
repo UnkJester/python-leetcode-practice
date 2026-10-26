@@ -1,10 +1,6 @@
-from p94_binary_tree_inorder_traversal import build_tree
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from helpers.binary_tree import TreeNode, build_tree
+
+
 class Solution:
     def isSameTree(self, p: TreeNode | None, q: TreeNode | None) -> bool:
         return p is None and q is None or (
